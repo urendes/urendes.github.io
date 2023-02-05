@@ -1,9 +1,170 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Cheetsheet: Borders</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li><a href="#width">Width</a></li>
+          <li><a href="#style">Style</a></li>
+          <li><a href="#color">Color</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <h1>Jana Hinton</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <div>
+      <article id="none"> none
+      </article>
+      <article id="solid"> solid
+      </article><article id="hidden"> hidden
+      </article><article id="dotted"> dotted
+      </article><article id="dashed"> dashed
+      </article>
+       <article id="double"> double
+      </article>
+      <article id="groove"> groove
+      </article><article id="ridge"> ridge
+      </article><article id="inset"> inset
+      </article><article id="outset"> outset
+      </article>
+    </div>
 
+    <h1>CSS Borders</h1>
+    <div>
+      <ul>
+        <li>Border surrounds an element like a frame.</li>
+        <li>
+          Border can be set with a specific:
+          <ol>
+            <br>
+            <li class="teal">width</li>
+            <li class="orange">style</li>
+            <li class="pink">color</li>
+          </ol>
+        </li>
+        <br />
+        <!--Example-->
+        <li>Example:<br />
+          p {<br />&nbsp; &nbsp; border:
+          <span class="teal">3px</span>
+          <span class="orange">solid</span> <span class="pink">coral;</span
+          ><br />}
+        </li>
+      </ul>
+    </div>
+    <!--Table width-->
+    <table id="width">
+      <tr>
+        <th colspan="2">Width</th>
+      </tr>
+      <tr>
+        <td>specific size</td>
+        <td>in px, pt, cm, em, etc.</td>
+      </tr>
+      <tr>
+        <td>value using keyword &nbsp; &nbsp; &nbsp;</td>
+        <td>thin</td>
+      </tr>
+      <tr>
+        <td>value using keyword</td>
+        <td>medium</td>
+      </tr>
+      <tr>
+        <td>value using keyword</td>
+        <td>thick</td>
+      </tr>
+    </table>
+    <br />
+
+    <!--Table style-->
+    <table id="style">
+      <tr>
+        <th colspan="2">Style</th>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>Defines no border.</td>
+      </tr>
+      <tr>
+        <td>hidden</td>
+        <td>Defines a hidden border.</td>
+      </tr>
+      <tr>
+        <td>dotted</td>
+        <td>Defines a dotted border.</td>
+      </tr>
+      <tr>
+        <td>solid</td>
+        <td>Defines a solid border.</td>
+      </tr>
+      <tr>
+        <td>dashed</td>
+        <td>Defines a dashed border.</td>
+      </tr>
+      <tr>
+        <td>double</td>
+        <td>Defines a double border.</td>
+      </tr>
+      <tr>
+        <td>groove &nbsp;</td>
+        <td>
+          Defines a 3D grooved border. The effect depends on the border-color
+          value.
+        </td>
+      </tr>
+      <tr>
+        <td>ridge</td>
+        <td>
+          Defines a 3D ridged border. The effect depends on the border-color
+          value.
+        </td>
+      </tr>
+      <tr>
+        <td>inset</td>
+        <td>
+          Defines a 3D inset border. The effect depends on the border-color
+          value.
+        </td>
+      </tr>
+      <tr>
+        <td>outset</td>
+        <td>
+          Defines a 3D outset border. The effect depends on the border-color
+          value.
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <!--Table color-->
+    <table id="color">
+      <tr>
+        <th colspan="3">Color</th>
+      </tr>
+      <tr>
+        <td>color keywords &nbsp;</td>
+        <td>The color names are case-insensitive.</td>
+        <td>fuchsia</td>
+      </tr>
+      <tr>
+        <td>hex colors</td>
+        <td>
+          Hex numbers can be 0-9 and A-F. Hex values are always prefixed with a
+          # symbol.
+        </td>
+        <td>#32a1ce</td>
+      </tr>
+      <tr>
+        <td>RGB</td>
+        <td>
+          Colors are specified using a value between 0 and 255 or a percentage
+          value.
+        </td>
+        <td>rgb(128, 80, 200)</td>
+      </tr>
+    </table>
+  </body>
 </html>
