@@ -1,181 +1,168 @@
-/*Global*/
+ /*Global*/
 
 @font-face {
-  font-family: 'Itim';
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u-w4BMUTPHjxsIPx-oPCLC79U1.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/itim/v10/0nknC9ziJOYe8ANAkOzaZwQ.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 * {
-  font-family: 'Itim', 'Trebuchet MS',sans-serif;
-  font-size: 20px;
-  background-color: #f0f0f0;
-  box-sizing: border-box;
-  margin: 0;
+  font-family: Arial, sans-serif;
   padding: 0;
+  margin:0;
 }
-
-.teal {
-  color: teal;
-}
-
-.pink {
-  color: #C71585;
-}
-
-.orange {
-  color: orange;
-}
-
-nav {
-  height: 60px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(0,139,139);
-  position: fixed;
-}
-
-nav .navigation {
-  float: right;
-}
-
-.navigation, .navigation li, a {
-  list-style: none;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Gill Sans", sans-serif;
-  font-weight: 600;
-  padding: 5px 10px;
-  background-color: rgb(0,139,139);
-} 
-
-.navigation li a:hover {
-  background-color: white;
-  border-radius: 5%;
-  color: midnightblue;
-}
-
-article {
-  position: absolute;
-  padding: 3px;
-}
-  #ridge {
-    border: 8px ridge orange;
-    top: 850px;
-    left: 50px;
-  }
-
-  #none {
-    border: 8px none orange;
-    top: 710px;
-    right: 50px;
-  }
-
-  #outset {
-    border: 8px outset orange;
-    top: 750px;
-    left: 50px;
-  }
-  #inset {
-    border: 8px inset orange;
-    top: 650px;
-    left: 50px;
-  }
-
-  #groove {
-    border: 8px groove orange;
-    top: 550px;
-    left: 50px;
-  }
-
-  #solid {
-    border: 8px solid orange;
-    top: 850px;
-    right: 50px;
-  }
-
-  #dashed {
-    border: 8px dashed orange;
-    top: 750px;
-    right: 50px;
-  }
-  #hidden {
-    border: 8px hidden orange;
-    top: 650px;
-    right: 50px;
-  }
-
-  #dotted {
-    border: 8px dotted orange;
-    top: 550px;
-    right: 50px;
-  }
-
-  #double {
-    border: 8px double orange;
-    top: 650px;
-    right: 50px;
-  }
 
 h1 {
-  color: midnightblue;
+  font-weight: 400;
+  font-size: 40px;
   text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 45px;
+  padding: 15px 20px;
+  border-left: 6px solid black;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+
+}
+
+ul {
+  display: inline-block;
+}
+
+ul, li {
+  list-style: none;
+}
+
+hr {
+  color: black;
+  border: 3px solid black;
+}
+
+button {
+  width: 210px;
+  height: 70px;
+  font-size: 25px;
+  border: 6px outset rgb(32,178,170);
+  border-radius: 4%;
+  background-color: rgba(32,178,170, 0.9);
+  font-weight: bold;
+  color: seashell;
+  margin-bottom: 20px;
+}
+ 
+ /*Colors*/
+
+ .lightseagreen, li.lightseagreen, .deeppink, li.deeppink, .seashell, li.seashell {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
   font-size: 30px;
-  padding: 80px 0 20px 0;
+  top: 30px;
 }
 
-div {
-  padding-left: 45px;
+.lightseagreen, li.lightseagreen {
+  background-color: lightseagreen;
+  left: 100px;
 }
 
-ol li {
-padding-left: 75px;
-list-style: none;
+.deeppink, li.deeppink {
+  background-color: deeppink;
+  left: 300px;
+}
+
+.seashell, li.seashell {
+  background-color: seashell;
+  left: 500px;
+}
+
+/*Fonts*/
+.fontsize {
+  font-size: 40px !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lato, .lato li, .arial, .arial li, .georgia, .georgia li {
+  position: relative;
+  font-size: 21px;
+  text-align: center;
+}
+
+.lato, .lato li {
+  font-family: 'Lato', sans-serif;
+  left: 35px;
+}
+
+.arial, .arial li {
+  font-family: 'Arial', sans-serif;
+  left: 135px;
+}
+
+.georgia, .georgia li {
+  font-family: 'Georgia', serif;
+  left: 215px;
 }
 
 
-/*Table width*/
-table#width, #width th, #width td {
-  border: 2px solid teal;
-  margin: 20px auto;
-  border-collapse: collapse;
+/*Buttons*/
+
+article {
+  position: relative;
+  display: inline-block;
+  left: 100px;
+  padding-right: 250px;
 }
 
-#width th {
-  background-color: teal;
-  color: white;
+.hover-button {
+  color: seashell;
+  border: 6px outset deeppink;
 }
+ 
+ .active-button {
+   background-color: deeppink;
+   border: 6px inset rgb(255,20,147);
+ }
 
-#width td {
+
+
   
-}
-
-/*Table style*/
-table#style, #style th, #style td {
-  border: 2px solid orange;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-#style th {
-  background-color: orange;
-  color: white;
-}
-
-/*Table color*/
-table#color, #color th, #color td {
-  border: 2px solid #C71585;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-#color th {
-  background-color: #C71585;
-  color: white;
-}
