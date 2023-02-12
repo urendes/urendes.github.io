@@ -1,86 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link href="../styles.css" rel="stylesheet" />
-    <title>Website Style Guide</title>
-  </head>
-  <body>
-    <h1>Website Style Guide</h1>
-    
-    <section class="colors">
-      <h2>Colors</h2>
-      <ul class="lightseagreen">
-        <br>
-        <br>
-        <li>&nbsp; &nbsp; lightseagreen</li>
-        <li>&nbsp; &nbsp; &nbsp; #20B2AA</li>
-        <li>&nbsp; rgb(32,178,170)</li>
-      </ul>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <title>Tea Cozy</title>
+    </head>
+     
+    <body>
+        <header class="container">
+            <img class="logo" alt="Tea Cozy Logo" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*1iemfo*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA."/>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#tea">Featured Tea</a></li>
+                    <li><a href="#location">Locations</a></li>
+                </ul>
+             </nav>
+        </header>
 
-      <ul class="deeppink">
-        <br>
-        <br>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; deeppink</li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; #FF1493	</li>
-        <li>&nbsp; rgb(255,20,147)</li>
-      </ul>
+        <div><p class="undernav" id="mission"></p></div>
 
-      <ul class="seashell">
-        <br>
-        <br>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; seashell</li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; #FFF5EE	</li>
-        <li>&nbsp; rgb(255,245,238)</li>
-      </ul>
-      
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <section class="fonts">
-      <h2>Fonts</h2>
-      <ul class="lato">
-        <li class="fontsize">Lato</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li class="italic">Lorem ipsum dolor sit amet.</li>
-        <li class="bold">Lorem ipsum dolor sit amet.</li>
-      </ul>
-      
-        
-      <ul class="arial">
-        <li class="fontsize">Arial</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li class="italic">Lorem ipsum dolor sit amet.</li>
-        <li class="bold">Lorem ipsum dolor sit amet.</li>
-      </ul>
+        <section class="container hero-image">
+            <h2 class="mission">Our Mission</h2>
+            <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </section>
 
-      <ul class="georgia">
-        <li class="fontsize">Georgia</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li class="italic">Lorem ipsum dolor sit amet.</li>
-        <li class="bold">Lorem ipsum dolor sit amet.</li>
-      </ul>
-    </section>
-    <br>
-    <br>
-    <hr>
-    <section class="text-styles">
-      <h2>Buttons</h2>
-      <article class="normal">
-      <h3>Normal</h3>
-      <button class="normal-button">SELECT</button>
-      </article>
-      <article class="hover">
-      <h3>Hover</h3>
-      <button class="hover-button">SELECT</button>
-      </article>
-      <article class="active">
-      <h3>Active</h3>
-      <button class="active-button">SELECT</button>
-      </article>
-    </section>
+        <div><p class="undernav" id="tea"></p></div>
 
-  </body>
+        <section class="container tea">
+            <h2>Tea of the Month</h2>
+            <h4>What's Steeping at The Cozy Tea?</h4>
+
+            <div class="images">
+                <figure>
+                    <img alt="Fall Berry Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg?_gl=1*34u5rg*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA.">
+                    <figcaption>Fall Berry Blitz Tea</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Spiced Rum Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg?_gl=1*169ro1b*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA.">
+                    <figcaption>Spiced Rum Tea</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Seasonal Donuts" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg?_gl=1*egcgsh*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA.">
+                    <figcaption>Seasonal Donuts</figcaption>
+                </figure><figure>
+                    <img alt="Myrtle Ave Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg?_gl=1*1mr6n9i*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA.">
+                    <figcaption>Myrtle Ave Tea</figcaption>
+                </figure><figure>
+                    <img alt="Bedford Bizzare Tea" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*1mr6n9i*_ga*NzU3MTgyMTI3Mi4xNjczOTk0MTIw*_ga_3LRZM6TM9L*MTY3NjEwNzQ4NC4yOC4xLjE2NzYxMDc1MDUuMC4wLjA.">
+                    <figcaption>Bedford Bizzare Tea</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <div><p class="undernav" id="location"></p></div>
+
+        <section class="container locations">
+            <h2>Locations</h2>
+            <div class="location-boxes">
+                <ul class="downtown">
+                    <li class="list-header">Downtown</li>
+                    <li>384 West 4th St</li>
+                    <li>Suite 108</li>
+                    <li>Portland, Maine</li>
+                </ul>
+                <ul class="East-Bayside">
+                    <li class="list-header">East Bayside</li>
+                    <li>3433 Phisherman's Avenue</li>
+                    <li>(Northwest Corner)</li>
+                    <li>Portland, Maine</li>
+                </ul>
+                <ul class="Oakdale">
+                    <li class="list-header">Oakdale</li>
+                    <li>515 Crescent Avenue</li>
+                    <li>Second Floor</li>
+                    <li>Portland, Maine</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="container info" >
+            <h2>The Tea Cozy</h2>
+            <h5>contact@the teacozy.com</h5>
+            <h5>917-555-8904</h5>
+        </section>
+
+        <footer>
+            <h5>copyright The Tea Cozy 2017</h5>
+        </footer>
+
+    </body>
+
 </html>
