@@ -36,9 +36,10 @@ p {
     background-color: black;
 }
 
-@media only screen and (max-device-width: 480px) {
-    body {
-        background: aqua;
+@media all and (max-device-width: 480px) {
+   .locations:nth-child(1) {
+       color: black;
+    }
 }
 
 /* HEADER */
