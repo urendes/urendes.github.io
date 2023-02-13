@@ -36,7 +36,7 @@ p {
     background-color: black;
 }
 
-@media all and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
    .locations h2 {
        color: black;
     }
