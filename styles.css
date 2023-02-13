@@ -37,7 +37,7 @@ p {
 }
 
 @media all and (max-device-width: 480px) {
-   .locations:nth-child(1) {
+   .locations h2 {
        color: black;
     }
 }
