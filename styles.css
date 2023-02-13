@@ -36,9 +36,20 @@ p {
     background-color: black;
 }
 
+/* MOBILE */
+
 @media only screen and (max-width: 480px) {
    .locations h2 {
        color: black;
+    }
+    
+    .navbar {
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+    
+    a {
+        font-size: 18px;
     }
 }
 
