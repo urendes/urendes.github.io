@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.menu-icon, .cross, span {
+    opacity: 0;
+}
+
 .container {
     display: flex;
 }
@@ -36,23 +40,6 @@ p {
     background-color: black;
 }
 
-/* MOBILE */
-
-@media only screen and (max-width: 480px) {
-   .locations h2 {
-       color: black;
-    }
-    
-    .navbar {
-        flex-flow: row wrap;
-        gap: 10px;
-    }
-    
-    a {
-        font-size: 18px;
-    }
-}
-
 /* HEADER */
 
 
@@ -71,11 +58,6 @@ header {
 .logo {
     max-height: 50px;
     padding-left: 10px;
-   
-}
-
-nav {
-    display: flex;
 }
 
 .navbar {
@@ -205,4 +187,78 @@ footer h5 {
     margin: 30px 20px;
 }
 
-  
+/* MEDIA */
+
+@media screen and (max-width: 420px) {
+   .locations h2 {
+    color: black;
+   }
+   
+   .navbar {
+    flex-flow: row wrap;
+    gap: 10px;
+   }
+
+   a {
+    font-size: 18px;
+   
+   }
+}
+
+@media only screen and (max-width: 830px) {
+    .menu-icon {
+        display: block;
+        font-size: 3rem;
+        right: 1rem;
+        top: 0.5rem;
+        opacity: 0;
+        height: 3rem;
+        width: 3rem;
+        z-index: 100;
+        position: absolute;
+    }
+
+    span {
+        transform: rotate(90deg);
+        position: absolute;
+        z-index: 10;
+        right: 1rem;
+        top: 0.5rem;
+        cursor: pointer;
+        font-size: 2.5rem;
+        opacity: 1;
+    }
+
+    span:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .navbar li a {
+        color:#e8e6e3;
+        font-size: 1.2rem;
+    }
+
+    .navbar li a:hover {
+        color:white;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 10;
+        top: -100%;
+        left: 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        opacity: 0;
+        transition: top 1.5s ease-in-out, opacity 500ms linear;
+        background-color: black;
+        width: 75%;
+        padding: 1rem;
+    } 
+
+     .menu-icon:checked~.navbar {
+        top: 0;
+        opacity: 1;
+      }
+}
